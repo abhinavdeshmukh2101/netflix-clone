@@ -1,0 +1,28 @@
+/* for a block of page */
+.row {
+  margin: 1rem;
+}
+
+/* for complete row */
+.row__posters {
+  display: flex;
+}
+
+/* for a image */
+.row__poster {
+  /* this property will make the image looks good irrespective of resizing of the page. */
+  object-fit: contain; /*this is a very very very important property*/
+  max-height: 250px;
+  margin-right: 1rem;
+  transition: ease-in-out 1s;
+}
+
+.row__poster:hover {
+  transition: scale(1.05);
+}
+
+.row__poster_large {
+  object-fit: contain;
+  max-height: 300px;
+  margin-right: 1rem;
+}
